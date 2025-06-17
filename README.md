@@ -33,7 +33,7 @@ This portfolio serves as a gateway for recruiters, collaborators, and tech enthu
 
 ## 🚀 Live Preview
 
-[Click here to view the live site (if hosted on GitHub Pages)](https://your-username.github.io/your-repo-name)
+[Click here to view the live site](https://sanjayn2903.github.io/Personal-Portfolio/)
 
 ---
 
