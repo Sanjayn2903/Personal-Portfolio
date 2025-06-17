@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="website icon" type="png" href="assets/logo.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title> Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a  href="#" class="navbar__logo slide-in-left">My Portfolio</a>
+
+        <ul class="navbar__links zoom-in" id="navbar-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home">
+      <div class="header__wrapper">
+      <div class="section__container header__container ">
+        <p class="flip-in"><span>Hello I am</span></p>
+        <h1 class="slide-in-left">Sanjay N</h1>
+        <h2 class="section__title slide-in-right">Software <span>Developer.</span></h2>
+        <p  class="zoom-in"style="text-align: justify">
+          Dedicated engineering graduate with expertise in web development,
+          Java, and database management, backed by hands-on experience.
+          Detail-oriented problem solver passionate about mastering emerging
+          technologies to build innovative solutions. Committed to continuous
+          growth and delivering impactful results in dynamic tech environments.
+        </p>
+        <div class="action__btns">
+          <a href="SANJAY N CV.pdf" download  onclick="showToast('📥 Resume Downloaded')">
+            <button class="btn flip-in" data-dl>
+              <i class="ri-download-2-line"></i>
+             Download CV
+            </button>
+          </a>
+          <div id="toast" class="toast">📥 Resume Downloaded</div>
+          <!-- View Icon Button -->
+          <a
+            href="https://drive.google.com/file/d/12inq0d5NPXKiUAQe2q4RM1KxCn-6UmhT/view?usp=drivesdk"
+            target="_blank"
+            class="video"
+          >
+            <div class="preview flip-in">
+              <i class="ri-eye-line"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="header__image"></div>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__image">
+        <div class="glow-frame zoom-in">
+    <img  src="assets/profile.jpeg" alt="about" />
+  </div>
+        </div>
+        <div class="about__content">
+          <h2 class="section__title slide-in-left">About <span>Me</span></h2>
+          <p class="section__subtitle slide-in-right">Software Developer!</p>
+          <p style="text-align: justify" class="about__details zoom-in">
+            Hi! I'm Sanjay N, an Electronics and Communication Engineering
+            graduate from Sri Eshwar College of Engineering, Coimbatore, with a
+            strong passion for full-stack development and problem-solving. My
+            expertise spans JavaScript, Node.js, Express.js, MongoDB, and React,
+            demonstrated through projects like an E-commerce API and a Blog
+            Application. With over 300 LeetCode problems solved and competitive
+            coding achievements, I thrive on tackling technical challenges.I’m
+            eager to collaborate on innovative projects, continuously expand my
+            skill set, and contribute to impactful technologies. Let’s connect
+            and explore how we can create something exceptional together!
+          </p>
+          <details id="moreDetails">
+            <summary class="btn flip-in">More About</summary>
+              <div id="detailsBody" class="details-body">
+
+            <p style="text-align: justify" class="details-content fade-in">
+              Driven Electronics Engineer (8.3 CGPA) with a passion for
+              problem-solving (LeetCode #1,546) and full-stack development
+              (Node.js, React). Certified in Python and Java, I combine
+              technical rigor with creative thinking to build efficient
+              solutions. Known for my resilience under challenges and
+              collaborative spirit, I thrive in dynamic, innovative
+              environments. My analytical mindset and attention to detail ensure
+              high-quality outcomes, while my curiosity fuels continuous
+              learning. Eager to contribute my skills and grow with teams that
+              value impact-driven technology.
+            </p>
+            <!-- <p>
+              My goal is to leverage technology to build meaningful solutions. I'm always open to collaboration, learning, and innovating with like-minded individuals.
+            </p> -->
+            
+          </details>
+        <!-- Certifications Button -->
+<!-- Certifications Button -->
+ <div class="about-btn-group " id="certBtnGroup">
+  <button class="btn secondary-btn flip-in" onclick="openCertifications()">Certifications</button>
+
+<!-- Certifications Modal -->
+<div id="certificationModal" class="modal ">
+  <div class="modal-content">
+    <span class="close" onclick="closeCertifications()">&times;</span>
+    <h2 class = "zoom-in"style="text-align: center; margin-bottom: 1rem">🎓 My Certifications</h2>
+    <div class="project-details ">
+      <ul class="certification-list ">
+         <li class="cert-item slide-in-left">
+    🗃️ <strong >SQL for Beginners</strong>
+    <div class="cert-meta">
+      <span>HackerRank  </span>
+      <span>2024</span>
+      <a href="SQL.pdf" target="_blank" download onclick="showToast('📜 SQL Certificate Downloaded')"  class="download-link" title="Download Certificate">
+        <i class="fas fa-download"></i>
+      </a>
+    </div>
+  </li>
+  <li class="cert-item slide-in-right">
+    🎓 <strong>Joy of Computing Using Python</strong>
+    <div class="cert-meta">
+      <span>Score: 77%</span>
+      <span>NPTEL</span>
+      <span>2023</span>
+      <a href="The Joy Of Computing Using Python-1.pdf" target="_blank" download onclick="showToast('📜 Python Certificate Downloaded')" class="download-link" title="Download Certificate">
+        <i class="fas fa-download"></i>
+      </a>
+    </div>
+  </li>
+  <li class="cert-item slide-in-left">
+    💻 <strong>Web Development (CSS, HTML, JavaScript)</strong>
+    <div class="cert-meta">
+      <span>Udemy</span>
+      <span>2023</span>
+      <a href="Web development.pdf" target="_blank" download onclick="showToast('📜 Web Development Certificate Downloaded')"  class="download-link" title="Download Certificate">
+        <i class="fas fa-download"></i>
+      </a>
+    </div>
+  </li>
+  <li class="cert-item slide-in-right">
+    ☕ <strong>Java Programming - Beginner to Master</strong>
+    <div class="cert-meta">
+      <span>Udemy</span>
+      <span>2023</span>
+      <a href="Java.pdf"target="_blank" download onclick="showToast('📜 Java Certificate Downloaded')"  class="download-link" title="Download Certificate">
+        <i class="fas fa-download"></i>
+      </a>
+    </div>
+  </li>
+  <li class="cert-item slide-in-left">
+    🧠 <strong>Mastering DSA using C and C++</strong>
+    <div class="cert-meta">
+      <span>Udemy</span>
+      <span>2022</span>
+      <a href="DSA.pdf" target="_blank" download onclick="showToast('📜 DSA Certificate Downloaded')" class="download-link" title="Download Certificate">
+        <i class="fas fa-download"></i>
+      </a>
+    </div>
+  </li>
+ 
+</ul>
+</div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Notification -->
+<div id="toast" class="toast">📥 Certificate Downloaded</div>
+
+</div>
+
+
+
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="service" id="services">
+      <div class="service__container">
+        <p class="section__subtitle slide-in-left">What I did!</p>
+        <h2 class="section__title slide-in-right"><span>My</span> Internships</h2>
+        <div class="service__grid">
+          <div class="service__card slide-in-left">
+            <i class="ri-brain-line"></i>
+            <h4>MERN STACK - Basic</h4>
+            <p style="text-align: justify">
+              During my foundational MERN stack internship, I gained hands-on
+              experience building full-stack applications using MongoDB,
+              Express.js, React, and Node.js. I developed RESTful APIs with CRUD
+              operations, implemented basic authentication, and connected
+              frontend React components to backend services. Learned to manage
+              state using React hooks and styled responsive UIs with CSS
+              frameworks. This internship helped me understand the complete flow
+              of data in web applications.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/19f655RMomU5dE-P213LXiWvhzjjc4NMt/view?usp=drivesdk"
+              target="_blank"
+              class="read__more flip-in"
+              >Read more</a
+            >
+          </div>
+          <!-- <div class="service__card">
+            <i class="ri-dna-line"></i>
+            <h4>MERN STACK - Advance</h4>
+            <p>
+              In my advanced MERN training, I built complex applications featuring JWT authentication, Redux for state management, and optimized database queries. Implemented advanced features like file uploads, real-time updates with Socket.io, and payment gateway integration. Focused on performance optimization, security best practices, and deploying applications on cloud platforms. Enhanced my skills in debugging, testing, and writing maintainable code for scalable applications.
+            </p>
+            <a href="https://drive.google.com/file/d/1spNOb99U9i96yit9Obf7C3uYyHKjqvDq/view?usp=drive_link" target="_blank" class="read__more">Read more...</a>
+          </div> -->
+          <div class="service__card slide-in-right">
+            <i class="ri-robot-line"></i>
+            <h4>MERN STACK - Advance</h4>
+            <p>
+              In my advanced MERN training, I built complex applications
+              featuring JWT authentication, Redux for state management, and
+              optimized database queries. Implemented advanced features like
+              file uploads, real-time updates with Socket.io, and payment
+              gateway integration. Focused on performance optimization, security
+              best practices, and deploying applications on cloud platforms.
+              Enhanced my skills in debugging, testing, and writing maintainable
+              code for scalable applications.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/19f655RMomU5dE-P213LXiWvhzjjc4NMt/view?usp=drivesdk"
+              target="_blank"
+              class="read__more flip-in"
+              >Read more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project" id="projects">
+      <div class="section__container project__container">
+        <p class="section__subtitle slide-in-left">My Work</p>
+        <h2 class="section__title slide-in-right"><span>Latest</span> Project</h2>
+        <div class="project__grid ">
+          <div class="project__card slide-in-left">
+            <img
+              src="assets/AdobeStock_223290240-1-2-scaled.webp"
+              alt="project"
+              class="project-image"
+              onclick="openProjectModal()"
+            />
+          </div>
+
+          <!-- The Modal/Popup -->
+          <!-- The Modal/Popup -->
+          <div id="projectModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <h2 class = "zoom-in"style="text-align: center; margin-bottom: 1rem">
+                🛒 Shopper – E-commerce Backend API
+              </h2>
+              <div class="project-details">
+                <p class="justified fade-in">
+                  Designed and developed a secure, scalable backend API for
+                  <strong>Shopper</strong>, an e-commerce platform, using modern
+                  web technologies and best practices.
+                </p>
+
+                <h3 class="rotate-in">🔐 Key Features:</h3>
+                <ul class="justified slide-in-left">
+                  <li>
+                    <strong>Authentication & Authorization:</strong> Implemented
+                    secure user authentication using
+                    <em>JSON Web Tokens (JWT)</em> and refresh tokens for
+                    session lifecycle management.
+                  </li>
+                  <li>
+                    <strong>Cart Management:</strong> Developed APIs to add,
+                    update, and remove products in the cart, ensuring a seamless
+                    shopping experience.
+                  </li>
+                  <li>
+                    <strong>Checkout System:</strong> Generated and displayed
+                    final bill including product prices, tax, and discounts.
+                  </li>
+                  <li>
+                    <strong>Redis Integration:</strong> Used <em>Redis</em> for
+                    storing OTPs and JWT refresh tokens to enhance speed and
+                    security.
+                  </li>
+                </ul>
+
+                <h3 class="rotate-in">🧰 Tech Stack:</h3>
+                <ul class="justified slide-in-right">
+                  <li>
+                    <strong>Languages & Runtime:</strong> JavaScript, Node.js
+                  </li>
+                  <li><strong>Framework:</strong> Express.js</li>
+                  <li><strong>Database:</strong> MongoDB</li>
+                  <li>
+                    <strong>Authentication:</strong> JSON Web Token (JWT),
+                    Refresh Tokens
+                  </li>
+                  <li><strong>Caching:</strong> Redis</li>
+                </ul>
+
+                <p class="justified fade-in">
+                  This project demonstrates the ability to build RESTful APIs
+                  with secure authentication and efficient use of caching
+                  systems for modern web applications.
+                </p>
+
+                <div class="flip-in"style="text-align: center; margin-top: 2rem">
+                  <a
+                    href="https://github.com/Sanjayn2903/E-commerce-"
+                    target="_blank"
+                    class="source-btn"
+                    >🔗 View Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Application Project Card -->
+          <div class="project__card slide-in-left">
+            <img
+              src="assets/Depositphotos_63107903_original-1520x800.jpg"
+              alt="Blog Project"
+              class="project-image"
+              onclick="openBlogModal()"
+            />
+          </div>
+
+          <!-- Blog Application Modal/Popup -->
+          <div id="blogModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeBlogModal()">&times;</span>
+              <h2 class="zoom-in" style="text-align: center; margin-bottom: 1rem">
+                📝 Blog Application – Backend API for Blogging Platform
+              </h2>
+              <div class="project-details">
+                <p class="justified fade-in">
+                  Developed a robust backend for a blogging platform that
+                  enables users to create, manage, and share blog posts with
+                  rich formatting. This project prioritizes secure user access
+                  and flexible content management.
+                </p>
+
+                <h3 class="rotate-in">🔐 Key Features:</h3>
+                <ul class="justified slide-in-left">
+                  <li>
+                    <strong>User Authentication:</strong> Implemented secure
+                    login and signup functionality using
+                    <em>JSON Web Tokens (JWT)</em>.
+                  </li>
+                  <li>
+                    <strong>Rich Text Editing Support:</strong> Integrated
+                    backend support for rich text content to allow dynamic and
+                    styled blog posts.
+                  </li>
+                  <li>
+                    <strong>Content Management APIs:</strong> Designed RESTful
+                    APIs to manage blogs — including creating, editing,
+                    deleting, and retrieving posts.
+                  </li>
+                  <li>
+                    <strong>Security & Performance:</strong> Focused on robust
+                    authentication, validation, and efficient MongoDB usage for
+                    data integrity.
+                  </li>
+                </ul>
+
+                <h3 class="rotate-in">🧰 Tech Stack:</h3>
+                <ul class="justified slide-in-right">
+                  <li>
+                    <strong>Languages & Runtime:</strong> JavaScript, Node.js
+                  </li>
+                  <li><strong>Framework:</strong> Express.js</li>
+                  <li><strong>Database:</strong> MongoDB</li>
+                  <li><strong>Authentication:</strong> JSON Web Token (JWT)</li>
+                  <li><strong>Architecture:</strong> RESTful API</li>
+                </ul>
+
+                <p class="justified fade-in">
+                  This project highlights expertise in backend development with
+                  focus on security, RESTful API design, and efficient content
+                  management tailored for dynamic blogging platforms.
+                </p>
+
+                <div class="flip-in" style="text-align: center; margin-top: 2rem">
+                  <a
+                    href="https://github.com/Sanjayn2903/blopapp-Backend"
+                    target="_blank"
+                    class="source-btn"
+                    >🔗 View Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Manager Project Card -->
+          <div class="project__card slide-in-left">
+            <img
+              src="assets/what-is-contact-manager.webp"
+              alt="Contact Manager Project"
+              class="project-image"
+              onclick="openContactModal()"
+            />
+          </div>
+
+          <!-- Contact Manager Modal/Popup -->
+          <div id="contactModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeContactModal()">&times;</span>
+              <h2 class="zoom-in" style="text-align: center; margin-bottom: 1rem">
+                📇 Contact Manager Application – Backend API
+              </h2>
+              <div class="project-details">
+                <p class="justified fade-in">
+                  Designed and developed a secure and efficient backend API for
+                  a Contact Manager platform that enables users to manage
+                  personal and professional contacts with ease. Focused on
+                  intuitive data handling, user authentication, and seamless
+                  interaction.
+                </p>
+
+                <h3 class="rotate-in">🔐 Key Features:</h3>
+                <ul class="justified slide-in-left">
+                  <li>
+                    <strong>User Authentication:</strong> Implemented secure
+                    login and registration using
+                    <em>JSON Web Tokens (JWT)</em> to protect user data and
+                    sessions.
+                  </li>
+                  <li>
+                    <strong>Contact Management:</strong> Developed RESTful APIs
+                    to create, read, update, and delete contact information,
+                    supporting easy and organized contact handling.
+                  </li>
+                  <li>
+                    <strong>Secure Data Storage:</strong> Utilized MongoDB for
+                    reliable and scalable database management.
+                  </li>
+                  <li>
+                    <strong>RESTful API Design:</strong> Ensured smooth
+                    communication between client and server with well-structured
+                    endpoints.
+                  </li>
+                </ul>
+
+                <h3 class="rotate-in">🧰 Tech Stack:</h3>
+                <ul class="justified slide-in-right">
+                  <li>
+                    <strong>Languages & Runtime:</strong> JavaScript, Node.js
+                  </li>
+                  <li><strong>Framework:</strong> Express.js</li>
+                  <li><strong>Database:</strong> MongoDB</li>
+                  <li><strong>Authentication:</strong> JSON Web Token (JWT)</li>
+                  <li><strong>Architecture:</strong> RESTful API</li>
+                </ul>
+
+                <p class="justified fade-in">
+                  This project demonstrates backend development proficiency with
+                  a focus on secure authentication, efficient data management,
+                  and scalable API design.
+                </p>
+
+                <div class="flip-in" style="text-align: center; margin-top: 2rem">
+                  <a
+                    href="https://github.com/Sanjayn2903/Contact_Manager_App"
+                    target="_blank"
+                    class="source-btn"
+                    >🔗 View Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weather App Project Card -->
+          <div class="project__card slide-in-right">
+            <img
+              src="assets/Weather.png"
+              alt="Weather App"
+              class="project-image"
+              onclick="openWeatherModal()"
+            />
+          </div>
+
+          <!-- Weather App Modal -->
+          <div id="weatherModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeWeatherModal()">&times;</span>
+              <h2 class="zoom-in" style="text-align: center; margin-bottom: 1rem">
+                🌦️ Weather App – Real-Time Forecast UI
+              </h2>
+              <div class="project-details">
+                <p class="justified fade-in">
+                  Developed a fully functional Weather Application using
+                  <strong>HTML</strong>, <strong>CSS</strong>, and
+                  <strong>JavaScript</strong> that fetches real-time weather
+                  data via an external API. Enhanced with smooth animations and
+                  responsive design for a modern and interactive user
+                  experience.
+                </p>
+
+                <h3 class="rotate-in">✨ Key Features:</h3>
+                <ul class="justified slide-in-left">
+                  <li>
+                    <strong>Real-Time Data:</strong> Integrated with OpenWeather
+                    API to fetch live weather updates based on city input.
+                  </li>
+                  <li>
+                    <strong>Responsive Design:</strong> Optimized layout for
+                    various devices using flexible grids and media queries.
+                  </li>
+                  <li>
+                    <strong>JavaScript Interactivity:</strong> Displayed live
+                    temperature, humidity, wind speed, and weather icons
+                    dynamically using DOM manipulation.
+                  </li>
+                  <li>
+                    <strong>CSS Animations:</strong> Smooth transitions,
+                    animated backgrounds (like moving clouds or raindrops), and
+                    hover effects for a dynamic look and feel.
+                  </li>
+                </ul>
+
+                <h3 class="rotate-in">🧰 Tech Stack:</h3>
+                <ul class="justified slide-in-right">
+                  <li>
+                    <strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6)
+                  </li>
+                  <li><strong>API:</strong> OpenWeatherMap API</li>
+                  <li>
+                    <strong>Design:</strong> Responsive Layout, Animated UI
+                  </li>
+                </ul>
+
+                <p class="justified fade-in">
+                  This project showcases frontend development skills, including
+                  real-time API integration, DOM manipulation, responsive layout
+                  techniques, and creative UI design using animations.
+                </p>
+
+                <div class="flip-in" style="text-align: center; margin-top: 2rem">
+                  <a
+                    href="https://github.com/Sanjayn2903/projects"
+                    target="_blank"
+                    class="source-btn"
+                    >🔗 View Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Taxi Booking App Project Card -->
+          <div class="project__card slide-in-right">
+            <img
+              src="assets/taxi-booking-app.jpg"
+              alt="Taxi Booking Console App"
+              class="project-image"
+              onclick="openTaxiModal()"
+            />
+          </div>
+
+          <!-- Taxi Booking Console App Modal -->
+          <div id="taxiModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeTaxiModal()">&times;</span>
+              <h2 class="zoom-in" style="text-align: center; margin-bottom: 1rem">
+                🚖 Taxi Booking Application – Java Console-Based System
+              </h2>
+              <div class="project-details">
+                <p class="justified fade-in">
+                  Developed a command-line Taxi Booking Application in
+                  <strong>Java</strong>, simulating real-world ride booking
+                  functionality using object-oriented programming principles.
+                  This interactive console program allows users to register,
+                  book rides, and manage trips efficiently.
+                </p>
+
+                <h3 class="rotate-in">✨ Key Features:</h3>
+                <ul class="justified slide-in-left">
+                  <li>
+                    <strong>User Registration & Login:</strong> Console-based
+                    input to register and authenticate users with role-based
+                    functionality.
+                  </li>
+                  <li>
+                    <strong>Ride Booking:</strong> Users can book a ride by
+                    entering pickup and drop-off details. Ride availability is
+                    managed in memory.
+                  </li>
+                  <li>
+                    <strong>Fare Calculation:</strong> The system calculates
+                    fare based on distance and time using predefined logic.
+                  </li>
+                  <li>
+                    <strong>Driver Assignment:</strong> Drivers are
+                    automatically assigned based on availability and proximity
+                    (simulated).
+                  </li>
+                  <li>
+                    <strong>Ride History:</strong> Users can view past ride
+                    details with status and fare breakdown.
+                  </li>
+                  <li>
+                    <strong>Modular OOP Design:</strong> Clean separation of
+                    concerns using classes like `User`, `Driver`, `Ride`,
+                    `BookingManager`, etc.
+                  </li>
+                </ul>
+
+                <h3 class="rotate-in">🧰 Tech Stack:</h3>
+                <ul class="justified slide-in-right">
+                  <li><strong>Language:</strong> Java</li>
+                  <li>
+                    <strong>Architecture:</strong> OOP, CLI-based interaction
+                  </li>
+                  <li>
+                    <strong>Data Handling:</strong> In-memory storage using
+                    collections (ArrayList, HashMap)
+                  </li>
+                  <li><strong>Tools:</strong> JDK, IntelliJ, Terminal</li>
+                </ul>
+
+                <p class="justified fade-in">
+                  This project showcases core Java programming skills, including
+                  class design, inheritance, encapsulation, and exception
+                  handling, all within a user-friendly command-line interface.
+                </p>
+
+                <div class="flip-in" style="text-align: center; margin-top: 2rem">
+                  <a
+                    href="https://github.com/Sanjayn2903/taxi_booking_app"
+                    target="_blank"
+                    class="source-btn"
+                    >🔗 View Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Car Parking App Project Card -->
+          <div class="project__card slide-in-right">
+            <img
+              src="assets/car-parking-app-development.jpg"
+              alt="Car Parking System"
+              class="project-image"
+              onclick="openParkingModal()"
+            />
+          </div>
+
+          <!-- Car Parking App Modal -->
+          <div id="parkingModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeParkingModal()">&times;</span>
+              <h2 class="zoom-in" style="text-align: center; margin-bottom: 1rem">
+                🚗 Car Parking Management System – Java Console-Based
+                Application
+              </h2>
+              <div class="project-details">
+                <p class="justified fade-in">
+                  Designed and developed a fully functional
+                  <strong>Car Parking Management System</strong> using core Java
+                  and object-oriented programming principles. This command-line
+                  application helps efficiently allocate parking spots, track
+                  vehicle entries and exits, and calculate parking charges.
+                </p>
+
+                <h3 class="rotate-in">🔑 Key Features:</h3>
+                <ul class="justified slide-in-left">
+                  <li>
+                    <strong>Slot Management:</strong> Dynamically allocates
+                    parking slots based on availability using in-memory data
+                    structures.
+                  </li>
+                  <li>
+                    <strong>Vehicle Entry/Exit:</strong> Records vehicle number,
+                    entry/exit time, and slot assigned.
+                  </li>
+                  <li>
+                    <strong>Fee Calculation:</strong> Computes charges based on
+                    parking duration using configurable rates.
+                  </li>
+                  <li>
+                    <strong>Vehicle Lookup:</strong> Allows searching for parked
+                    vehicles by registration number.
+                  </li>
+                  <li>
+                    <strong>CLI Interface:</strong> Simple and intuitive
+                    menu-driven console interface for interaction.
+                  </li>
+                  <li>
+                    <strong>OOP Design:</strong> Uses classes such as
+                    `ParkingLot`, `Vehicle`, `Ticket`, `SlotManager` to ensure
+                    modularity and maintainability.
+                  </li>
+                </ul>
+
+                <h3 class="rotate-in">🧰 Tech Stack:</h3>
+                <ul class="justified slide-in-right">
+                  <li><strong>Language:</strong> Java</li>
+                  <li>
+                    <strong>Architecture:</strong> Object-Oriented Programming,
+                    CLI Interface
+                  </li>
+                  <li>
+                    <strong>Data Structures:</strong> ArrayList, HashMap, Queue
+                  </li>
+                  <li><strong>Tools:</strong> JDK, IntelliJ, Terminal</li>
+                </ul>
+
+                <p class="justified fade-in">
+                  This project demonstrates core Java skills, including class
+                  design, file handling, exception management, and logic
+                  structuring—ideal for real-world use cases in facilities and
+                  garage systems.
+                </p>
+
+                <div class="flip-in" style="text-align: center; margin-top: 2rem">
+                  <a
+                    href="https://github.com/Sanjayn2903/Car-parking-using-java"
+                    target="_blank"
+                    class="source-btn"
+                    >🔗 View Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__content">
+          <h2 class="section__title slide-in-left">Contact <span>Me!</span></h2>
+          <p class="section__subtitle slide-in-right">If you have any project in your mind</p>
+          <div class="footer__details fade-in">
+            <p>
+              Feel free to get in touch by filling out the contact form on this
+              website. I typically respond within 24 hours. Whether you have a
+              question, a project idea, or simply wish to connect — I'm always
+              open to meaningful conversations.
+            </p>
+            <p><strong>👤 Name:</strong> Sanjay N</p>
+            <p><strong>📞 Phone:</strong> +91 90874 13925</p>
+            <p><strong>📍 Location:</strong> Coimbatore, Tamil Nadu, India</p>
+          </div>
+          <div class="social__icons ">
+            <a
+              href="https://www.instagram.com/sanjay__29_?igsh=ZGdtMXZybm43Zmxy"
+              class="icon rotate-in"
+              target="_blank"
+              ><i class="ri-instagram-fill "></i
+            ><span class="tooltip">Instagram</span></a>
+            <a
+              href="mailto:sanjaynagaraj368@gmail.com"
+              class="icon rotate-in"
+              target="_blank"
+              ><i class="ri-mail-line"></i
+            ><span class="tooltip">Gmail</span></a>
+            <a
+              href="https://www.naukri.com/mnjuser/profile?id=&altresid"
+              class="icon rotate-in"
+              target="_blank"
+              ><i class="ri-briefcase-line"></i
+            ><span class="tooltip">Naukri</span></a>
+            <a
+              href="https://www.linkedin.com/in/sanjay-n-869b3a267/"
+              class="icon rotate-in"
+              target="_blank"
+              ><i class="ri-linkedin-fill"></i
+            ><span class="tooltip">Linkedin</span></a>
+          </div>
+        </div>
+        <!-- <div id="toast" class="toast"> -->
+
+        <form class="footer__form" id="contact-form">
+          <input
+            type="text"
+            name="from_name"
+            placeholder="Your Name"
+            class="slide-in-left"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email Address"
+            class="slide-in-right"
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Your Phone Number"
+            class="slide-in-left"
+            required
+          />
+          <textarea
+            name="message"
+            cols="30"
+            rows="5"
+            placeholder="Your Idea"
+            class="slide-in-right"
+            required
+          ></textarea>
+          <!-- </div> -->
+          <button class="button flip-in">
+  <i class="icon-send material-icons">send</i>
+    <i class="icon-check material-icons">check</i>
+  <span class="button-text">Send</span>
+</button>
+
+        </form>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+      (function () {
+        emailjs.init("fvAIqiNScZfM6KCQM"); // Replace with your EmailJS Public Key
+      })();
+
+      // Smooth scroll with offset for fixed navbar
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarHeight = 70; // px, must match CSS
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            const targetId = this.getAttribute("href").slice(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+              e.preventDefault();
+              const top =
+                target.getBoundingClientRect().top +
+                window.pageYOffset -
+                navbarHeight;
+              window.scrollTo({ top, behavior: "smooth" });
+            }
+          });
+        });
+      });
+    </script>
+    <script src="script.js"></script>
+    <div id="toast" class="toast"></div>
+
+</body>
+</html>
